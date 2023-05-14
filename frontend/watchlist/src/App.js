@@ -6,13 +6,85 @@ import hdfclogo from "./image/HDFC.png";
 import hindlogo from "./image/HINDPETRO.png";
 
 function App() {
+  let p = 1.1;
+
+  const color = p < 0 ? "red" : "green";
   return (
-    <div className="App">
-      <div my-10>
-        <h3>My Watchlist</h3>
+    <div className="watchlistmaincontainer">
+      <div className="watchlistheaddingcontainer">
+        <div className="watchlistheadding">My Watchlist</div>
+      </div>
+      <div className="watchlistcontainer">
+        <img className="watchlistimage" src={hindlogo}></img>
+        <div className="watchlistcompanycontainer">
+          <div className="watchlistcompanyname">SPOT</div>
+          <div className="watchliststockname">Spotify</div>
+        </div>
+        <div className="watchlistpricecontainer">
+          <div className="watchliststockprice">$310.40</div>
+          <div className="watchstockpercentage" style={{ color }}>
+            {p}%
+          </div>
+        </div>
       </div>
 
-      <div>
+      <div className="watchlistcontainer">
+        <img className="watchlistimage" src={hindlogo}></img>
+        <div className="watchlistcompanycontainer">
+          <div className="watchlistcompanyname">SPOT</div>
+          <div className="watchliststockname">Spotify</div>
+        </div>
+        <div className="watchlistpricecontainer">
+          <div className="watchliststockprice">$310.40</div>
+          <div className="watchstockpercentage" style={{ color }}>
+            {p}%
+          </div>
+        </div>
+      </div>
+
+      <div className="watchlistcontainer">
+        <img className="watchlistimage" src={hindlogo}></img>
+        <div className="watchlistcompanycontainer">
+          <div className="watchlistcompanyname">SPOT</div>
+          <div className="watchliststockname">Spotify</div>
+        </div>
+        <div className="watchlistpricecontainer">
+          <div className="watchliststockprice">$310.40</div>
+          <div className="watchstockpercentage" style={{ color }}>
+            {p}%
+          </div>
+        </div>
+      </div>
+
+      <div className="watchlistcontainer">
+        <img className="watchlistimage" src={hindlogo}></img>
+        <div className="watchlistcompanycontainer">
+          <div className="watchlistcompanyname">SPOT</div>
+          <div className="watchliststockname">Spotify</div>
+        </div>
+        <div className="watchlistpricecontainer">
+          <div className="watchliststockprice">$310.40</div>
+          <div className="watchstockpercentage" style={{ color }}>
+            {p}%
+          </div>
+        </div>
+      </div>
+
+      <div className="watchlistcontainer" id="watchlast">
+        <img className="watchlistimage" src={hindlogo}></img>
+        <div className="watchlistcompanycontainer">
+          <div className="watchlistcompanyname">SPOT</div>
+          <div className="watchliststockname">Spotify</div>
+        </div>
+        <div className="watchlistpricecontainer">
+          <div className="watchliststockprice">$310.40</div>
+          <div className="watchstockpercentage" style={{ color }}>
+            {p}%
+          </div>
+        </div>
+      </div>
+
+      {/* <div>
         <img className="photo" src={aapllogo}></img>
         <div className="companies">AAPL 172.570007</div>
         <div className="companies">Apple</div>
@@ -41,7 +113,7 @@ function App() {
         <div className="companies">HINDPETR 260.750000</div>
         <div className="companies">Hindustan Petroleum</div>
         <div style={{ color: "green" }}>2.75</div>
-      </div>
+      </div> */}
     </div>
   );
 }
